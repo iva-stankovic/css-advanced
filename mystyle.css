@@ -1,0 +1,38 @@
+a {
+    display: block;
+    margin-top: 20px;
+}
+a[href*="google"] {
+    color: green;
+}
+
+a[href*="link-group"] {
+    color: red;
+}
+
+/*a[href|="https://www.link"] {
+    color: red;
+}
+
+a[href="https://www.link-group.eu/"] {
+    color: red;
+}*/
+
+#second-div p:nth-child(even){
+    color: red;
+}
+#second-div p:nth-child(odd){
+    color: blue;
+}
+
+#first-div p:not(#second-div p)::after {
+    content: "new";
+    color: yellow;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+p:last-of-type:hover {
+    font-style: italic;
+    cursor: pointer;
+}
