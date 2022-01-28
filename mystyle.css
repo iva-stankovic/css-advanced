@@ -32,7 +32,7 @@ a[href="https://www.link-group.eu/"] {
     font-style: italic;
 }
 
-p:last-of-type:hover {
+p:nth-child(8):hover {
     font-style: italic;
     cursor: pointer;
 }
